@@ -10,7 +10,6 @@ This package loads a list of 2D shapes from a JSON file, each defined with 2D ve
 - Specify a 3D starting pose (position + orientation) for each shape
 - Compute Cartesian trajectories using MoveIt 2
 - Simulate motion in RViz with a virtual xArm7 robot
-- Easily extensible for real robot or Gazebo integration
 
 ---
 
@@ -81,14 +80,5 @@ This will:
 
 To add new shapes, modify `config/shapes.json`. Each entry is traced in sequence.
 
-If you wish to simulate the arm in Gazebo or use the real xArm, replace or extend the MoveIt execution backend in `shape_tracer_node.py`.
-
----
-
-## Future Extensions
-
-- Integration with Gazebo and robot state publishers
-- Real xArm hardware control support
-- Dynamic shape loading via ROS 2 service or topic
 
 ---
